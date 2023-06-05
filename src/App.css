@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Space Mono";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #141414;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.foto-1 {
+  height: 100vh;
+  width: 35%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formulario {
+  height: 100vh;
+  width: 65%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro {
+  max-width: 450px;
+  padding: 3rem;
+
+  backdrop-filter: blur(1.5px);
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title h1 {
+  font-size: 1.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  color: #fff;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+  border: 0px;
+  outline: none;
+  padding: 10px 15px;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 0px;
+  outline: none !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  opacity: 0.5;
+  color: #fff !important;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-green {
+  border: 2px solid #dff263 !important;
+}
+
+.border-red {
+  border: 2px solid #ff7b61 !important;
+}
+
+.btn.btn-green {
+  margin: 10px;
+  margin-top: 30px;
+  background-color: #dff263;
+  color: #141414;
+  border-radius: 0px;
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  border-right: 3px solid #dff263;
+}
+
+@media (max-width: 768px) {
+  .foto-1 {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .formulario{
+    width: 100%;
   }
 }

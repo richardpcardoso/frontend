@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import Router from "./app/router";
+import Open from "./app/pages/open/Open";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div class="content">
+      <div className="foto-1">
+        <video
+          width={"100%"}
+          height={"100vh"}
+          loop="true"
+          autoplay="true"
+          muted
         >
-          Learn React
-        </a>
-      </header>
+          <source src="/media/video4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="formulario">
+        <Router />
+      </div>
     </div>
   );
 }
