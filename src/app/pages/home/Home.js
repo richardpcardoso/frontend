@@ -70,7 +70,11 @@ function Home() {
             viewBox={`0 0 256 256`}
           />
           <div>
-            <button type="button" className="btn btn-green" onClick={handleCopyClick}>
+            <button
+              type="button"
+              className="btn btn-green"
+              onClick={handleCopyClick}
+            >
               <span>{isCopied ? "Copiado!" : "Copiar link"}</span>
             </button>
             <a
@@ -85,6 +89,7 @@ function Home() {
       ) : (
         <>
           <input
+            required
             className="form-control border-green"
             type="password"
             placeholder="PASSWORD"
@@ -93,7 +98,8 @@ function Home() {
           />
 
           <div className="mensagem border-green">
-            <input
+            <textarea
+              required
               className="form-control"
               type="text"
               name="message"

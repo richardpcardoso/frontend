@@ -49,16 +49,14 @@ function Open() {
             </div>
           )}
 
-          <a
-            className="btn btn-green"
-            href={"/"}
-          >
+          <a className="btn btn-green" href={"/"}>
             ENVIAR MENSAGEM
           </a>
         </div>
       ) : (
         <>
           <input
+            required
             className="form-control border-green"
             type="password"
             placeholder="PASSWORD"
