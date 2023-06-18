@@ -21,7 +21,7 @@ function Open() {
       })
       .then((response) => setResult(response.data))
       .catch((err) => {
-        alert("ops! ocorreu um erro" + err);
+        alert("Ops! Não foi possível completar a requisição...");
       });
   }
 
